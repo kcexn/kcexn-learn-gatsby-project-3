@@ -16,5 +16,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
     },
+    {
+      resolve: `gatsby-plugin-tinacms`,
+      options: {
+        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"],
+        sidebar: {
+          position: "displace",
+        },
+      },
+    },
   ],
 }
